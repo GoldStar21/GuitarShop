@@ -39,7 +39,7 @@
             </div>
 
             <div class="form-group col-md-7 mb-3">
-                <label for="price">PRICE</label>
+                <label for="price">PRICE is good</label>
                 <input type="text" class="form-control" name="price" id="price" placeholder="500 $">
             </div>
 
