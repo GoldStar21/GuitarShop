@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('color');
             $table->text('description');
             $table->decimal('price', 8, 2);
-            $table->binary('image_path')->nullable();
+            $table->integer('stock');
+            $table->string('image_path')->nullable();
             $table->timestamps();
         });
     }

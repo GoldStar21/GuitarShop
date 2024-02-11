@@ -19,7 +19,7 @@ class Guitar extends Model
         'color',
         'description',
         'price', 
+        'stock', 
         'image_path'
-
     ];
 }

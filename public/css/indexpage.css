@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Protest Strike', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('/images/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+   
+}
+
+.logo{
+    font-size: 39px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: azure;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 70px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: azure;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.hero-section{
+    height: 50vh;
+    display: flex;
+  align-items: center;
+  padding: 0 110px;
+  
+}
+
+.hero-section .content {
+    max-width: 800px;
+    margin-top: 25px;
+    width: 100%;
+    color: azure;
+    
+    
+  }
+  .additional-section {
+    margin-top: 20px; /* Dodajte željenu vrijednost margine s gornje strane nove sekcije */
+}
+
+.more-content-section {
+    margin-top: 20px; /* Dodajte željenu vrijednost margine s gornje strane nove sekcije */
+}
+.he {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 110px;
+}
+
+.he .co {
+    max-width: 800px;
+    margin-top: 55px;
+    width: 100%;
+    color: azure;
+}

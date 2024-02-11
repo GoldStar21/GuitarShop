@@ -1,0 +1,14 @@
+body {
+    background-color: #AAD9BB;
+}
+
+.navbar {
+    background-color: #F9F7C9; /* Promijenite ovu boju prema svojim željama */
+    color: white; /* Dodajte ovaj stil ako želite promijeniti boju teksta u bijelu */
+}
+
+.footer {
+    background-color: #F9F7C9; /* Promijenite ovu boju prema svojim željama */
+    color: white; /* Dodajte ovaj stil ako želite promijeniti boju teksta u bijelu */
+}
+

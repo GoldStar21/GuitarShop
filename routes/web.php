@@ -15,15 +15,8 @@ use App\Http\Controllers\GuitarController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('guitars_table', GuitarController::class);
 
-
-//Ruta koja pokazuje create stranicu. Putanja, kontorler.
-//Route::get('webshop/create', [GuitarController::class, 'create']);
-
-//Route::get('/', [ProductController::class, 'index']);
-Route::resource('webshop', GuitarController::class);
-
-//Route::post('/webshop', [GuitarController::class, 'store'])->name('webshop.store');
+Route::get('/shop', function(){
+    return view('shop.index');
+})->name('shop.index');

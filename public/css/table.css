@@ -1,0 +1,54 @@
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    width: 60px;  /**  Prilagodite širinu po potrebi */
+    white-space: nowrap; /** Sprječava prelazak teksta u novi red */
+    overflow: hidden;  /** Sakriva višak teksta */
+    text-overflow: ellipsis; /** Dodaje elipse za višak teksta */
+}
+td:nth-child(2), th:nth-child(2) {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+td:nth-child(3), th:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+td:nth-child(4), th:nth-child(4) {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+td:nth-child(5), th:nth-child(5) {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+td:nth-child(6), th:nth-child(6) {
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+td:nth-child(7), th:nth-child(7) {
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+td:nth-child(8), th:nth-child(8) {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+td:nth-child(9), th:nth-child(9) {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
