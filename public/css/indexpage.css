@@ -1,101 +1,414 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
 
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Protest Strike', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Ugodno skrolanje*/
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    background: url('/images/background.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    
+    font-family: "Protest Strike";
 }
 
+/* --- Header and navbar ---*/
+
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: transparent;
+    height: 110vh;
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    
-   
-}
-
-.logo{
-    font-size: 39px;
-    color: azure;
-    text-decoration: none;
-    font-weight: 700;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar a {
-    position: relative;
-    font-size: 20px;
     color: azure;
-    font-weight: 500;
     text-decoration: none;
-    margin-left: 70px;
 }
 
-.navbar a::before {
-    content: '';
+.navbar .logo {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+    font-size: 2em;
+}
+
+.navbar .nav-links ul li.active a {
+    color: rgb(185, 211, 34);
+    font-weight: 600;
+}
+
+.navbar .menu-hamburger {
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: azure;
-    transition: .3s;
+    top: 45px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
 }
 
-.navbar a:hover::before {
-    width: 100%;
+.mobile-menu {
+    margin-left: 0;
 }
 
-.hero-section{
-    height: 50vh;
+/* --- Section No.1 ---*/
+
+.intro-section {
+    text-align: center;
+    background-color: rgb(24, 23, 23);
+    height: 360px;
+}
+
+.intro-heading {
+    color: rgb(185, 211, 34);
+    padding: 40px;
+}
+
+.intro {
+    margin: 0;
+    font-size: 60px;
+}
+
+.intro-container {
     display: flex;
-  align-items: center;
-  padding: 0 110px;
-  
+    justify-content: space-between;
 }
 
-.hero-section .content {
-    max-width: 800px;
-    margin-top: 25px;
-    width: 100%;
+.intro-paragraph {
+    text-align: center;
     color: azure;
-    
-    
-  }
-  .additional-section {
-    margin-top: 20px; /* Dodajte željenu vrijednost margine s gornje strane nove sekcije */
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 20px;
 }
 
-.more-content-section {
-    margin-top: 20px; /* Dodajte željenu vrijednost margine s gornje strane nove sekcije */
+/* --- Section No.2 ---*/
+
+.categories-section {
+    text-align: center;
+    background-color: rgb(24, 23, 23);
+    height: 840px;
 }
-.he {
-    min-height: 50vh;
+
+.categories-heading {
+    color: rgb(185, 211, 34);
+    padding: 60px;
+}
+
+.categories {
+    margin: 0;
+    font-size: 45px;
+}
+
+.categories-container {
     display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.categories-container img {
+    width: 300px;
+    height: auto;
+    margin: 0 80px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 2px solid rgb(185, 211, 34);
+}
+
+.categories-container img:hover {
+    transform: scale(1.2);
+    border-width: 10px;
+}
+
+/* Section No.3 */
+
+.about-section {
+    text-align: center;
+    background-color: rgb(24, 23, 23);
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.about-heading {
+    color: rgb(185, 211, 34);
+    padding: 30px;
+}
+
+.abouth {
+    margin: 0;
+    font-size: 45px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 110px;
 }
 
-.he .co {
-    max-width: 800px;
-    margin-top: 55px;
-    width: 100%;
+.text-box {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.fa-shop {
+    font-size: 115px;
+    color: rgb(185, 211, 34);
+    margin-left: 90px;
+}
+
+.text-box p {
+    text-align: center;
     color: azure;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 0 70px;
+}
+/* --------------*/
+
+.about-coins {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box-coins {
+    flex: 1;
+    margin-left: 90px;
+}
+
+.fa-coins {
+    font-size: 115px; 
+    color: rgb(226, 230, 26);
+    margin-left: 90px;
+}
+
+.text-box-coins p {
+    text-align: center;
+    color: azure;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 20px 0; 
+    padding: 0 70px;
+}
+
+/* --------------*/
+
+.about-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box-phone {
+    flex: 1;
+    margin-left: 90px;
+}
+
+.fa-phone-volume {
+    font-size: 115px;
+    color: rgb(185, 211, 34);
+    margin-left: 90px;
+}
+
+.text-box-phone p {
+    text-align: center;
+    color: azure;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 0 70px;
+}
+
+/* --Footer-- */
+.footer {
+    border-top: 2px solid azure;
+    background-color: rgb(24, 23, 23);
+    color: azure;
+    text-align: center;
+    padding: 25px;
+    height: 70px;
+}
+
+/* Mobile section */
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    /* Section No.1 */
+    .intro-section {
+        height: auto; 
+        padding: 50px; 
+    }
+
+    .intro-heading {
+        padding: 10px;
+    }
+
+    .intro {
+        font-size: 40px;
+    }
+
+    .intro-container {
+        flex-direction: column; 
+        margin-top: 20px; 
+    }
+
+    .intro-paragraph {
+        font-size: 20px;
+    }
+
+    /* Section No.2 - Categories */
+    .categories-section {
+        height: auto; 
+        padding: 50px; 
+    }
+
+    .categories-heading {
+        padding: 20px; 
+    }
+
+    .categories {
+        font-size: 30px; 
+    }
+
+    .categories-container {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 20px; 
+    }
+
+    .categories-container img {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Section 3 */
+
+    .about-section {
+        height: auto;
+    }
+
+    .about-heading {
+        padding: 20px; 
+    }
+
+    .abouth {
+        font-size: 30px; 
+    }
+
+    .about,
+    .about-coins,
+    .about-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon-box {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .text-box,
+    .text-box-coins,
+    .text-box-phone {
+        flex: 1;
+        text-align: center;
+        color: azure;
+        font-size: 30px;
+        line-height: 1.5;
+        margin: 20px;
+    }
+
+    .fa-shop,
+    .fa-coins,
+    .fa-phone-volume {
+        font-size: 160px;
+        color: white;
+    }
+
+    .about .fa-shop,
+    .about-coins .fa-coins,
+    .about-phone .fa-phone-volume {
+        font-size: 18vw; 
+        max-width: 300px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        color: rgb(185, 211, 34); 
+    }
+
+    .about-coins .fa-coins {
+        color: rgb(226, 230, 26);
+    }
+
+    .footer {
+        height: auto;
+        padding: 15px;
+    }
 }
